@@ -5,19 +5,63 @@
  */
 package fragmentacion_vertical;
 
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author 706
  */
 public class Inicio extends javax.swing.JFrame {
-
+    Integer matUse[][] = new Integer[4][4];
+    Integer matAcc[][] = new Integer[4][3];
     /**
      * Creates new form Inicio
      */
     public Inicio() {
         initComponents();
+        agregarValidaciones();
     }
+    
+    public void obtenerMatUse(){
+        matUse[0][0] = Integer.parseInt(matUse1.getText());
+        matUse[0][1] = Integer.parseInt(matUse2.getText());
+        matUse[0][2] = Integer.parseInt(matUse3.getText());
+        matUse[0][3] = Integer.parseInt(matUse4.getText());
+        
+        matUse[1][0] = Integer.parseInt(matUse5.getText());
+        matUse[1][1] = Integer.parseInt(matUse6.getText());
+        matUse[1][2] = Integer.parseInt(matUse7.getText());
+        matUse[1][3] = Integer.parseInt(matUse8.getText());   
+        
+        matUse[2][0] = Integer.parseInt(matUse9.getText());
+        matUse[2][1] = Integer.parseInt(matUse10.getText());
+        matUse[2][2] = Integer.parseInt(matUse11.getText());
+        matUse[2][3] = Integer.parseInt(matUse12.getText());
 
+        matUse[3][0] = Integer.parseInt(matUse13.getText());
+        matUse[3][1] = Integer.parseInt(matUse14.getText());
+        matUse[3][2] = Integer.parseInt(matUse15.getText());
+        matUse[3][3] = Integer.parseInt(matUse16.getText());        
+    }
+    public void obtenerMatAcc(){
+        matAcc[0][0] = Integer.parseInt(matAcc1.getText());
+        matAcc[0][1] = Integer.parseInt(matAcc2.getText());
+        matAcc[0][2] = Integer.parseInt(matAcc3.getText());
+        
+        matAcc[1][0] = Integer.parseInt(matAcc4.getText());
+        matAcc[1][1] = Integer.parseInt(matAcc5.getText());
+        matAcc[1][2] = Integer.parseInt(matAcc6.getText());
+
+        matAcc[2][0] = Integer.parseInt(matAcc7.getText());
+        matAcc[2][1] = Integer.parseInt(matAcc8.getText());
+        matAcc[2][2] = Integer.parseInt(matAcc9.getText());
+
+        matAcc[3][0] = Integer.parseInt(matAcc10.getText());
+        matAcc[3][1] = Integer.parseInt(matAcc11.getText());
+        matAcc[3][2] = Integer.parseInt(matAcc12.getText());   
+    }    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -28,11 +72,144 @@ public class Inicio extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        matUse1 = new javax.swing.JTextField();
+        matUse2 = new javax.swing.JTextField();
+        matUse3 = new javax.swing.JTextField();
+        matUse4 = new javax.swing.JTextField();
+        matUse5 = new javax.swing.JTextField();
+        matUse6 = new javax.swing.JTextField();
+        matUse7 = new javax.swing.JTextField();
+        matUse8 = new javax.swing.JTextField();
+        matUse9 = new javax.swing.JTextField();
+        matUse10 = new javax.swing.JTextField();
+        matUse11 = new javax.swing.JTextField();
+        matUse12 = new javax.swing.JTextField();
+        matUse13 = new javax.swing.JTextField();
+        matUse14 = new javax.swing.JTextField();
+        matUse15 = new javax.swing.JTextField();
+        matUse16 = new javax.swing.JTextField();
+        matAcc1 = new javax.swing.JTextField();
+        matAcc2 = new javax.swing.JTextField();
+        matAcc3 = new javax.swing.JTextField();
+        matAcc4 = new javax.swing.JTextField();
+        matAcc5 = new javax.swing.JTextField();
+        matAcc6 = new javax.swing.JTextField();
+        matAcc7 = new javax.swing.JTextField();
+        matAcc8 = new javax.swing.JTextField();
+        matAcc9 = new javax.swing.JTextField();
+        matAcc10 = new javax.swing.JTextField();
+        matAcc11 = new javax.swing.JTextField();
+        matAcc12 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
         jLabel1.setText("Inserte los valores para las siguientes matrices de acuerdo al sitio.");
+
+        jLabel2.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel2.setText("Matriz Access");
+
+        jLabel3.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel3.setText("A1");
+
+        jLabel4.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel4.setText("Matriz Use");
+
+        jLabel5.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel5.setText("A2");
+
+        jLabel6.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel6.setText("A4");
+
+        jLabel7.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel7.setText("A3");
+
+        jLabel8.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel8.setText("q1");
+
+        jLabel9.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel9.setText("q2");
+
+        jLabel10.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel10.setText("q3");
+
+        jLabel11.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel11.setText("q4");
+
+        jLabel12.setText("S1");
+
+        jLabel13.setText("S2");
+
+        jLabel14.setText("S3");
+
+        matUse1.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+
+        matUse2.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+
+        matUse3.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+
+        matUse4.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+
+        matUse5.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+
+        matUse6.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+
+        matUse7.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+
+        matUse8.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+
+        matUse9.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+
+        matUse10.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+
+        matUse11.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+
+        matUse12.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+
+        matUse13.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+
+        matUse14.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+
+        matUse15.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+
+        matUse16.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+
+        matAcc1.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+
+        matAcc2.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+
+        matAcc3.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+
+        matAcc4.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+
+        matAcc5.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+
+        matAcc6.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+
+        matAcc7.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+
+        matAcc8.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+
+        matAcc9.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+
+        matAcc10.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+
+        matAcc11.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+
+        matAcc12.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -40,15 +217,164 @@ public class Inicio extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(49, 49, 49)
-                .addComponent(jLabel1)
-                .addContainerGap(416, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jLabel9)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(matUse5, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(matUse6, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(matUse7, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jLabel10)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(matUse9, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(matUse10, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(matUse12, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(matUse11, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(matUse8, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel11)
+                                .addGap(18, 18, 18)
+                                .addComponent(matUse13, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(matUse14, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(matUse15, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(matUse16, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(56, 56, 56)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(matAcc10, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(matAcc11, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(matAcc12, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(matAcc4, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(matAcc5, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(matAcc6, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(matAcc7, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(matAcc8, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(matAcc9, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createSequentialGroup()
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(jLabel8)
+                                    .addGap(15, 15, 15)
+                                    .addComponent(matUse1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(matUse2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(17, 17, 17)
+                                    .addComponent(matUse3, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(matUse4, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(61, 61, 61))
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 158, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel4)
+                                    .addGap(161, 161, 161)))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(jLabel2)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(matAcc1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(matAcc2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGap(18, 18, 18)
+                            .addComponent(matAcc3, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(layout.createSequentialGroup()
+                            .addGap(52, 52, 52)
+                            .addComponent(jLabel3)
+                            .addGap(62, 62, 62)
+                            .addComponent(jLabel5)
+                            .addGap(62, 62, 62)
+                            .addComponent(jLabel7)
+                            .addGap(61, 61, 61)
+                            .addComponent(jLabel6)
+                            .addGap(103, 103, 103)
+                            .addComponent(jLabel12)
+                            .addGap(63, 63, 63)
+                            .addComponent(jLabel13)
+                            .addGap(66, 66, 66)
+                            .addComponent(jLabel14))
+                        .addComponent(jLabel1)))
+                .addContainerGap(141, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(39, 39, 39)
                 .addComponent(jLabel1)
-                .addContainerGap(390, Short.MAX_VALUE))
+                .addGap(36, 36, 36)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel4))
+                .addGap(28, 28, 28)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(jLabel5)
+                    .addComponent(jLabel7)
+                    .addComponent(jLabel6)
+                    .addComponent(jLabel12)
+                    .addComponent(jLabel13)
+                    .addComponent(jLabel14))
+                .addGap(9, 9, 9)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel8)
+                    .addComponent(matUse1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(matUse2, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(matUse4, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(matUse3, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(matAcc1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(matAcc2, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(matAcc3, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel9)
+                    .addComponent(matUse5, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(matUse8, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(matUse6, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(matUse7, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(matAcc4, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(matAcc5, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(matAcc6, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(19, 19, 19)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel10)
+                    .addComponent(matUse9, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(matUse11, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(matUse10, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(matUse12, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(matAcc7, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(matAcc8, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(matAcc9, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel11)
+                    .addComponent(matUse13, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(matUse14, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(matUse15, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(matUse16, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(matAcc10, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(matAcc11, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(matAcc12, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(125, Short.MAX_VALUE))
         );
 
         pack();
@@ -91,5 +417,223 @@ public class Inicio extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JTextField matAcc1;
+    private javax.swing.JTextField matAcc10;
+    private javax.swing.JTextField matAcc11;
+    private javax.swing.JTextField matAcc12;
+    private javax.swing.JTextField matAcc2;
+    private javax.swing.JTextField matAcc3;
+    private javax.swing.JTextField matAcc4;
+    private javax.swing.JTextField matAcc5;
+    private javax.swing.JTextField matAcc6;
+    private javax.swing.JTextField matAcc7;
+    private javax.swing.JTextField matAcc8;
+    private javax.swing.JTextField matAcc9;
+    private javax.swing.JTextField matUse1;
+    private javax.swing.JTextField matUse10;
+    private javax.swing.JTextField matUse11;
+    private javax.swing.JTextField matUse12;
+    private javax.swing.JTextField matUse13;
+    private javax.swing.JTextField matUse14;
+    private javax.swing.JTextField matUse15;
+    private javax.swing.JTextField matUse16;
+    private javax.swing.JTextField matUse2;
+    private javax.swing.JTextField matUse3;
+    private javax.swing.JTextField matUse4;
+    private javax.swing.JTextField matUse5;
+    private javax.swing.JTextField matUse6;
+    private javax.swing.JTextField matUse7;
+    private javax.swing.JTextField matUse8;
+    private javax.swing.JTextField matUse9;
     // End of variables declaration//GEN-END:variables
+public void agregarValidaciones(){
+    matUse1.addKeyListener(new KeyAdapter() {
+        public void keyTyped(KeyEvent e) {
+        validarUnoCero(e);
+        }
+        });
+    matUse2.addKeyListener(new KeyAdapter() {
+        public void keyTyped(KeyEvent e) {
+        validarUnoCero(e);
+        }
+        });    
+    matUse3.addKeyListener(new KeyAdapter() {
+        public void keyTyped(KeyEvent e) {
+        validarUnoCero(e);
+        }
+        });
+    matUse4.addKeyListener(new KeyAdapter() {
+        public void keyTyped(KeyEvent e) {
+        validarUnoCero(e);
+        }
+        });
+    matUse5.addKeyListener(new KeyAdapter() {
+        public void keyTyped(KeyEvent e) {
+        validarUnoCero(e);
+        }
+        });
+    matUse6.addKeyListener(new KeyAdapter() {
+        public void keyTyped(KeyEvent e) {
+        validarUnoCero(e);
+        }
+        });
+    matUse7.addKeyListener(new KeyAdapter() {
+        public void keyTyped(KeyEvent e) {
+        validarUnoCero(e);
+        }
+        });
+    matUse2.addKeyListener(new KeyAdapter() {
+        public void keyTyped(KeyEvent e) {
+        validarUnoCero(e);
+        }
+        });
+    matUse2.addKeyListener(new KeyAdapter() {
+        public void keyTyped(KeyEvent e) {
+        validarUnoCero(e);
+        }
+        });
+    matUse2.addKeyListener(new KeyAdapter() {
+        public void keyTyped(KeyEvent e) {
+        validarUnoCero(e);
+        }
+        });
+    matUse8.addKeyListener(new KeyAdapter() {
+        public void keyTyped(KeyEvent e) {
+        validarUnoCero(e);
+        }
+        });
+    matUse9.addKeyListener(new KeyAdapter() {
+        public void keyTyped(KeyEvent e) {
+        validarUnoCero(e);
+        }
+        });
+    matUse10.addKeyListener(new KeyAdapter() {
+        public void keyTyped(KeyEvent e) {
+        validarUnoCero(e);
+        }
+        });    
+    matUse11.addKeyListener(new KeyAdapter() {
+        public void keyTyped(KeyEvent e) {
+        validarUnoCero(e);
+        }
+        });
+    matUse12.addKeyListener(new KeyAdapter() {
+        public void keyTyped(KeyEvent e) {
+        validarUnoCero(e);
+        }
+        });
+    matUse13.addKeyListener(new KeyAdapter() {
+        public void keyTyped(KeyEvent e) {
+        validarUnoCero(e);
+        }
+        });
+    matUse14.addKeyListener(new KeyAdapter() {
+        public void keyTyped(KeyEvent e) {
+        validarUnoCero(e);
+        }
+        });
+    matUse15.addKeyListener(new KeyAdapter() {
+        public void keyTyped(KeyEvent e) {
+        validarUnoCero(e);
+        }
+        });
+    matUse16.addKeyListener(new KeyAdapter() {
+        public void keyTyped(KeyEvent e) {
+        validarUnoCero(e);
+        }
+        });    
+    
+    matAcc1.addKeyListener(new KeyAdapter() {
+        public void keyTyped(KeyEvent e) {
+        validarEnteros(e);
+        }
+        });     
+    matAcc2.addKeyListener(new KeyAdapter() {
+        public void keyTyped(KeyEvent e) {
+        validarEnteros(e);
+        }
+        });
+    matAcc3.addKeyListener(new KeyAdapter() {
+        public void keyTyped(KeyEvent e) {
+        validarEnteros(e);
+        }
+        });
+    matAcc4.addKeyListener(new KeyAdapter() {
+        public void keyTyped(KeyEvent e) {
+        validarEnteros(e);
+        }
+        });
+    matAcc5.addKeyListener(new KeyAdapter() {
+        public void keyTyped(KeyEvent e) {
+        validarEnteros(e);
+        }
+        });
+    matAcc6.addKeyListener(new KeyAdapter() {
+        public void keyTyped(KeyEvent e) {
+        validarEnteros(e);
+        }
+        });
+    matAcc7.addKeyListener(new KeyAdapter() {
+        public void keyTyped(KeyEvent e) {
+        validarEnteros(e);
+        }
+        });
+    matAcc8.addKeyListener(new KeyAdapter() {
+        public void keyTyped(KeyEvent e) {
+        validarEnteros(e);
+        }
+        });
+    matAcc9.addKeyListener(new KeyAdapter() {
+        public void keyTyped(KeyEvent e) {
+        validarEnteros(e);
+        }
+        });
+    matAcc10.addKeyListener(new KeyAdapter() {
+        public void keyTyped(KeyEvent e) {
+        validarEnteros(e);
+        }
+        });
+    matAcc11.addKeyListener(new KeyAdapter() {
+        public void keyTyped(KeyEvent e) {
+        validarEnteros(e);
+        }
+        });
+    matAcc12.addKeyListener(new KeyAdapter() {
+        public void keyTyped(KeyEvent e) {
+        validarEnteros(e);
+        }
+        });    
+}
+
+    public void validarUnoCero(KeyEvent e) {
+        char c = e.getKeyChar();
+        if (!('1'==c||'0'==c)) {
+        getToolkit().beep();
+        e.consume();
+        JOptionPane.showMessageDialog(null,"Error: La matriz de Uso solo acepta 0 y 1");
+        }
+    }
+    public void validarEnteros(KeyEvent e) {
+        char c = e.getKeyChar();
+        if (!(Character.isDigit(c) ||
+        (c == KeyEvent.VK_BACK_SPACE) ||
+        (c == KeyEvent.VK_DELETE))) {
+        getToolkit().beep();
+        e.consume();
+        JOptionPane.showMessageDialog(null,"Error: La matriz de Accesi solo acepta numeros enteros");
+        }
+    }
 }
