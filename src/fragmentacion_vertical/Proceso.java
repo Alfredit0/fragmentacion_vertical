@@ -36,6 +36,28 @@ public class Proceso {
         }
         return sum;
     }
+
+    public int bond(int ax, int ay){
+        int sum=0;                
+        for(int z=0; z<n; z++){
+               sum=sum+aff(z,ax)*aff(z, ay);                    
+        }
+        return sum;
+    }  
+    
+    public int AM(){
+        int sum=0;
+        for(int j=1; j<=n; j++){
+               sum=sum+bond(j, j-1)+bond(j,j+1);                    
+        }
+        return sum;
+    }
+    
+    public int cont(int Ai, int Ak, int Aj){
+        int sum=0;
+        sum= 2*bond(Ai, Ak)+2*bond(Ak, Aj)-2*bond(Ai,Aj);
+        return sum;
+    }
     
     public void calcularAA(){
         for(int i=0;i<n;i++){
