@@ -113,6 +113,7 @@ public class Inicio extends javax.swing.JFrame {
         matAcc10 = new javax.swing.JTextField();
         matAcc11 = new javax.swing.JTextField();
         matAcc12 = new javax.swing.JTextField();
+        btnIniciar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -210,6 +211,14 @@ public class Inicio extends javax.swing.JFrame {
         matAcc11.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
 
         matAcc12.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+
+        btnIniciar.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        btnIniciar.setText("Iniciar");
+        btnIniciar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnIniciarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -315,6 +324,10 @@ public class Inicio extends javax.swing.JFrame {
                             .addComponent(jLabel14))
                         .addComponent(jLabel1)))
                 .addContainerGap(141, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnIniciar, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(344, 344, 344))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -374,11 +387,28 @@ public class Inicio extends javax.swing.JFrame {
                     .addComponent(matAcc10, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(matAcc11, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(matAcc12, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(125, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 56, Short.MAX_VALUE)
+                .addComponent(btnIniciar, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(43, 43, 43))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnIniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIniciarActionPerformed
+        try{
+            obtenerMatUse();
+        }catch(Exception e){
+            JOptionPane.showMessageDialog(null,"Error: Debe llenar todos los campos de la matriz de Uso");
+        }
+        
+        try{
+            obtenerMatAcc();
+        }catch(Exception e){
+            JOptionPane.showMessageDialog(null,"Error: Debe llenar todos los campos de la matriz de Acceso");
+        }        
+
+    }//GEN-LAST:event_btnIniciarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -416,6 +446,7 @@ public class Inicio extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnIniciar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -633,7 +664,7 @@ public void agregarValidaciones(){
         (c == KeyEvent.VK_DELETE))) {
         getToolkit().beep();
         e.consume();
-        JOptionPane.showMessageDialog(null,"Error: La matriz de Accesi solo acepta numeros enteros");
+        JOptionPane.showMessageDialog(null,"Error: La matriz de Acceso solo acepta numeros enteros");
         }
     }
 }
