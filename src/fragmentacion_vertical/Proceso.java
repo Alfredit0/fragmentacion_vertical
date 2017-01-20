@@ -14,8 +14,7 @@ public class Proceso {
     Integer k = 4;
     Integer m = 3;
     Integer matUse[][] = new Integer[k][n];
-    Integer matAcc[][] = new Integer[k][m];
-    
+    Integer matAcc[][] = new Integer[k][m];    
     Integer matAA[][] = new Integer[4][4];
     
     public void proceso(){
@@ -67,6 +66,30 @@ public class Proceso {
             }
             System.out.print("\n");
         }
+    }
+
+    public Integer[][] getMatUse() {
+        return matUse;
+    }
+
+    public void setMatUse(Integer[][] matUse) {
+        this.matUse = matUse;
+    }
+
+    public Integer[][] getMatAcc() {
+        return matAcc;
+    }
+
+    public void setMatAcc(Integer[][] matAcc) {
+        this.matAcc = matAcc;
+    }
+    
+    public Integer[][] getMatAA() {
+        return matAA;
+    }
+
+    public void setMatAA(Integer[][] matAA) {
+        this.matAA = matAA;
     }
     public void cargarDatosPrueba(){
         matUse[0][0] = 1;
