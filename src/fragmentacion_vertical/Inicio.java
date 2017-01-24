@@ -598,7 +598,7 @@ public class Inicio extends javax.swing.JFrame {
 
     private void btnIniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIniciarActionPerformed
         int errors = 0;
-        try{
+        /*try{
             obtenerMatUse();
         }catch(Exception e){
             JOptionPane.showMessageDialog(null,"Error: Debe llenar todos los campos de la matriz de Uso");
@@ -610,11 +610,11 @@ public class Inicio extends javax.swing.JFrame {
         }catch(Exception e){
             JOptionPane.showMessageDialog(null,"Error: Debe llenar todos los campos de la matriz de Acceso");
             errors++;
-        }        
+        }*/      
         if(errors==0){
-            this.proc.setMatAcc(this.matAcc);
-            this.proc.setMatUse(matUse);
-            
+            //this.proc.setMatAcc(this.matAcc);
+            //this.proc.setMatUse(matUse);
+            this.proc.cargarDatosPrueba();
             mostrarMatAA();
         }
 
