@@ -16,7 +16,7 @@ import javax.swing.JOptionPane;
 public class Inicio extends javax.swing.JFrame {
     Integer matUse[][] = new Integer[4][4];
     Integer matAcc[][] = new Integer[4][3];
-    Proceso proc = new Proceso();
+    Fragmentacion proc = new Fragmentacion();
     /**
      * Creates new form Inicio
      */
@@ -140,103 +140,200 @@ public class Inicio extends javax.swing.JFrame {
         jLabel21 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
+        matCA1 = new javax.swing.JTextField();
+        matCA2 = new javax.swing.JTextField();
+        matCA3 = new javax.swing.JTextField();
+        matCA4 = new javax.swing.JTextField();
+        matCA5 = new javax.swing.JTextField();
+        matCA6 = new javax.swing.JTextField();
+        matCA7 = new javax.swing.JTextField();
+        matCA8 = new javax.swing.JTextField();
+        matCA9 = new javax.swing.JTextField();
+        matCA10 = new javax.swing.JTextField();
+        matCA11 = new javax.swing.JTextField();
+        matCA12 = new javax.swing.JTextField();
+        matCA13 = new javax.swing.JTextField();
+        matCA14 = new javax.swing.JTextField();
+        matCA15 = new javax.swing.JTextField();
+        matCA16 = new javax.swing.JTextField();
+        nomAOrd1 = new javax.swing.JLabel();
+        nomAOrd2 = new javax.swing.JLabel();
+        nomAOrd3 = new javax.swing.JLabel();
+        nomAOrd4 = new javax.swing.JLabel();
+        nomAOrd5 = new javax.swing.JLabel();
+        nomAOrd6 = new javax.swing.JLabel();
+        nomAOrd7 = new javax.swing.JLabel();
+        nomAOrd8 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        imgP1 = new javax.swing.JLabel();
+        imgP2 = new javax.swing.JLabel();
+        imgP3 = new javax.swing.JLabel();
+        fondo = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Inserte los valores para las siguientes matrices de acuerdo al sitio.");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(49, 39, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Matriz Access");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 90, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("A1");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 140, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Matriz Use");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 90, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("A2");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 140, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("A4");
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 140, -1, -1));
 
         jLabel7.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("A3");
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 140, -1, -1));
 
         jLabel8.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel8.setForeground(java.awt.Color.white);
         jLabel8.setText("q1");
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, -1, -1));
 
         jLabel9.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel9.setForeground(java.awt.Color.white);
         jLabel9.setText("q2");
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 210, -1, -1));
 
         jLabel10.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel10.setForeground(java.awt.Color.white);
         jLabel10.setText("q3");
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, -1, -1));
 
         jLabel11.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel11.setForeground(java.awt.Color.white);
         jLabel11.setText("q4");
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 310, -1, -1));
 
+        jLabel12.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setText("S1");
+        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 140, -1, -1));
 
+        jLabel13.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setText("S2");
+        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 140, -1, -1));
 
+        jLabel14.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(255, 255, 255));
         jLabel14.setText("S3");
+        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 140, -1, -1));
 
         matUse1.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        matUse1.setForeground(new java.awt.Color(255, 255, 255));
+        getContentPane().add(matUse1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 160, 35, 28));
 
         matUse2.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        matUse2.setForeground(new java.awt.Color(255, 255, 255));
+        getContentPane().add(matUse2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 160, 35, 28));
 
         matUse3.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        matUse3.setForeground(new java.awt.Color(255, 255, 255));
+        getContentPane().add(matUse3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 160, 35, 28));
 
         matUse4.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        matUse4.setForeground(new java.awt.Color(255, 255, 255));
+        getContentPane().add(matUse4, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 160, 35, 28));
 
         matUse5.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        getContentPane().add(matUse5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 210, 35, 28));
 
         matUse6.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        getContentPane().add(matUse6, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 210, 35, 28));
 
         matUse7.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        getContentPane().add(matUse7, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 210, 35, 28));
 
         matUse8.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        getContentPane().add(matUse8, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 210, 35, 28));
 
         matUse9.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        getContentPane().add(matUse9, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 260, 35, 28));
 
         matUse10.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        getContentPane().add(matUse10, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 260, 35, 28));
 
         matUse11.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        getContentPane().add(matUse11, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 260, 35, 28));
 
         matUse12.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        getContentPane().add(matUse12, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 260, 35, 28));
 
         matUse13.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        getContentPane().add(matUse13, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 300, 35, 28));
 
         matUse14.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        getContentPane().add(matUse14, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 300, 35, 28));
 
         matUse15.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        getContentPane().add(matUse15, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 300, 35, 28));
 
         matUse16.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        getContentPane().add(matUse16, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 300, 35, 28));
 
         matAcc1.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        matAcc1.setForeground(new java.awt.Color(255, 255, 255));
+        getContentPane().add(matAcc1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 160, 60, 28));
 
         matAcc2.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        matAcc2.setForeground(new java.awt.Color(255, 255, 255));
+        getContentPane().add(matAcc2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 160, 60, 28));
 
         matAcc3.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        matAcc3.setForeground(new java.awt.Color(255, 255, 255));
+        getContentPane().add(matAcc3, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 160, 60, 28));
 
         matAcc4.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        getContentPane().add(matAcc4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 210, 60, 28));
 
         matAcc5.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        getContentPane().add(matAcc5, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 210, 60, 28));
 
         matAcc6.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        getContentPane().add(matAcc6, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 210, 60, 28));
 
         matAcc7.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        getContentPane().add(matAcc7, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 260, 60, 28));
 
         matAcc8.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        getContentPane().add(matAcc8, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 260, 60, 28));
 
         matAcc9.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        getContentPane().add(matAcc9, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 260, 60, 28));
 
         matAcc10.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        getContentPane().add(matAcc10, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 300, 60, 28));
 
         matAcc11.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        getContentPane().add(matAcc11, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 300, 60, 28));
 
         matAcc12.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        getContentPane().add(matAcc12, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 300, 60, 28));
 
         btnIniciar.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
         btnIniciar.setText("Iniciar");
@@ -245,353 +342,275 @@ public class Inicio extends javax.swing.JFrame {
                 btnIniciarActionPerformed(evt);
             }
         });
+        getContentPane().add(btnIniciar, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 380, 94, 34));
 
         matAA1.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        matAA1.setForeground(new java.awt.Color(255, 255, 255));
         matAA1.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         matAA1.setEnabled(false);
+        getContentPane().add(matAA1, new org.netbeans.lib.awtextra.AbsoluteConstraints(578, 160, 60, 28));
 
         matAA2.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
         matAA2.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         matAA2.setEnabled(false);
+        getContentPane().add(matAA2, new org.netbeans.lib.awtextra.AbsoluteConstraints(644, 160, 60, 28));
 
         matAA3.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
         matAA3.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         matAA3.setEnabled(false);
+        getContentPane().add(matAA3, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 160, 60, 28));
 
         matAA4.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
         matAA4.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         matAA4.setEnabled(false);
+        getContentPane().add(matAA4, new org.netbeans.lib.awtextra.AbsoluteConstraints(776, 160, 60, 28));
 
         matAA5.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
         matAA5.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         matAA5.setEnabled(false);
+        getContentPane().add(matAA5, new org.netbeans.lib.awtextra.AbsoluteConstraints(578, 206, 60, 28));
 
         matAA6.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
         matAA6.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         matAA6.setEnabled(false);
+        getContentPane().add(matAA6, new org.netbeans.lib.awtextra.AbsoluteConstraints(644, 206, 60, 28));
 
         matAA7.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
         matAA7.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         matAA7.setEnabled(false);
+        getContentPane().add(matAA7, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 206, 60, 28));
 
         matAA8.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
         matAA8.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         matAA8.setEnabled(false);
+        getContentPane().add(matAA8, new org.netbeans.lib.awtextra.AbsoluteConstraints(776, 206, 60, 28));
 
         matAA9.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
         matAA9.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         matAA9.setEnabled(false);
+        getContentPane().add(matAA9, new org.netbeans.lib.awtextra.AbsoluteConstraints(578, 253, 60, 28));
 
         matAA10.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
         matAA10.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         matAA10.setEnabled(false);
+        getContentPane().add(matAA10, new org.netbeans.lib.awtextra.AbsoluteConstraints(644, 253, 60, 28));
 
         matAA11.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
         matAA11.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         matAA11.setEnabled(false);
+        getContentPane().add(matAA11, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 253, 60, 28));
 
         matAA12.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
         matAA12.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         matAA12.setEnabled(false);
+        getContentPane().add(matAA12, new org.netbeans.lib.awtextra.AbsoluteConstraints(776, 253, 60, 28));
 
         matAA13.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
         matAA13.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         matAA13.setEnabled(false);
+        getContentPane().add(matAA13, new org.netbeans.lib.awtextra.AbsoluteConstraints(578, 299, 60, 28));
 
         matAA14.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
         matAA14.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         matAA14.setEnabled(false);
+        getContentPane().add(matAA14, new org.netbeans.lib.awtextra.AbsoluteConstraints(644, 299, 60, 28));
 
         matAA15.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
         matAA15.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         matAA15.setEnabled(false);
+        getContentPane().add(matAA15, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 299, 60, 28));
 
         matAA16.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
         matAA16.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         matAA16.setEnabled(false);
+        getContentPane().add(matAA16, new org.netbeans.lib.awtextra.AbsoluteConstraints(776, 299, 60, 28));
 
         jLabel15.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel15.setForeground(new java.awt.Color(255, 255, 255));
         jLabel15.setText("Matriz AA");
+        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(646, 91, -1, -1));
 
         jLabel16.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel16.setForeground(new java.awt.Color(255, 255, 255));
         jLabel16.setText("A4");
+        getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(791, 135, -1, -1));
 
         jLabel17.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel17.setForeground(new java.awt.Color(255, 255, 255));
         jLabel17.setText("A3");
+        getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(724, 135, -1, -1));
 
         jLabel18.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel18.setForeground(new java.awt.Color(255, 255, 255));
         jLabel18.setText("A2");
+        getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(662, 135, -1, -1));
 
         jLabel19.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel19.setForeground(new java.awt.Color(255, 255, 255));
         jLabel19.setText("A1");
+        getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(596, 135, -1, -1));
 
         jLabel20.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel20.setForeground(java.awt.Color.white);
         jLabel20.setText("A4");
+        getContentPane().add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(558, 305, -1, -1));
 
         jLabel21.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel21.setForeground(java.awt.Color.white);
         jLabel21.setText("A3");
+        getContentPane().add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(558, 259, -1, -1));
 
         jLabel22.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel22.setForeground(java.awt.Color.white);
         jLabel22.setText("A2");
+        getContentPane().add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(558, 212, -1, -1));
 
         jLabel23.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel23.setForeground(java.awt.Color.white);
         jLabel23.setText("A1");
+        getContentPane().add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(558, 166, -1, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(49, 49, 49)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel8)
-                                        .addGap(15, 15, 15)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addComponent(matUse1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(18, 18, 18)
-                                                .addComponent(matUse2, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(17, 17, 17)
-                                                .addComponent(matUse3, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(18, 18, 18)
-                                                .addComponent(matUse4, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                    .addComponent(jLabel4)
-                                                    .addGroup(layout.createSequentialGroup()
-                                                        .addComponent(jLabel3)
-                                                        .addGap(45, 45, 45)
-                                                        .addComponent(jLabel5)
-                                                        .addGap(37, 37, 37)
-                                                        .addComponent(jLabel7)))
-                                                .addGap(39, 39, 39)
-                                                .addComponent(jLabel6))))
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(layout.createSequentialGroup()
-                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addGroup(layout.createSequentialGroup()
-                                                    .addComponent(jLabel9)
-                                                    .addGap(18, 18, 18)
-                                                    .addComponent(matUse5, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addGap(18, 18, 18)
-                                                    .addComponent(matUse6, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addGap(18, 18, 18)
-                                                    .addComponent(matUse7, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                .addGroup(layout.createSequentialGroup()
-                                                    .addComponent(jLabel10)
-                                                    .addGap(18, 18, 18)
-                                                    .addComponent(matUse9, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addGap(18, 18, 18)
-                                                    .addComponent(matUse10, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addGap(18, 18, 18)
-                                                    .addComponent(matUse11, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                            .addGap(18, 18, 18)
-                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(matUse8, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addComponent(matUse12, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                        .addGroup(layout.createSequentialGroup()
-                                            .addComponent(jLabel11)
-                                            .addGap(18, 18, 18)
-                                            .addComponent(matUse13, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGap(18, 18, 18)
-                                            .addComponent(matUse14, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGap(18, 18, 18)
-                                            .addComponent(matUse15, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGap(18, 18, 18)
-                                            .addComponent(matUse16, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                                .addGap(35, 35, 35)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(layout.createSequentialGroup()
-                                            .addComponent(matAcc4, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGap(18, 18, 18)
-                                            .addComponent(matAcc5, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGap(18, 18, 18)
-                                            .addComponent(matAcc6, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGroup(layout.createSequentialGroup()
-                                            .addComponent(matAcc7, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGap(18, 18, 18)
-                                            .addComponent(matAcc8, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGap(18, 18, 18)
-                                            .addComponent(matAcc9, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGroup(layout.createSequentialGroup()
-                                            .addComponent(matAcc10, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGap(18, 18, 18)
-                                            .addComponent(matAcc11, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGap(18, 18, 18)
-                                            .addComponent(matAcc12, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(layout.createSequentialGroup()
-                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                .addComponent(jLabel2)
-                                                .addGroup(layout.createSequentialGroup()
-                                                    .addComponent(matAcc1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addGap(18, 18, 18)
-                                                    .addComponent(matAcc2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                            .addGap(18, 18, 18)
-                                            .addComponent(matAcc3, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGroup(layout.createSequentialGroup()
-                                            .addGap(15, 15, 15)
-                                            .addComponent(jLabel12)
-                                            .addGap(63, 63, 63)
-                                            .addComponent(jLabel13)
-                                            .addGap(66, 66, 66)
-                                            .addComponent(jLabel14))))
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(30, 30, 30)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                            .addComponent(jLabel23)
-                                            .addComponent(jLabel22)
-                                            .addComponent(jLabel21)
-                                            .addComponent(jLabel20))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addComponent(matAA5, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(matAA6, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(matAA7, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(matAA8, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addComponent(matAA9, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(matAA10, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(matAA11, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(matAA12, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addComponent(matAA13, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(matAA14, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(matAA15, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(matAA16, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                                    .addComponent(jLabel15)
-                                                    .addGroup(layout.createSequentialGroup()
-                                                        .addComponent(matAA1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                        .addComponent(matAA2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(matAA3, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(matAA4, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabel19)
-                                        .addGap(50, 50, 50)
-                                        .addComponent(jLabel18)
-                                        .addGap(46, 46, 46)
-                                        .addComponent(jLabel17)
-                                        .addGap(51, 51, 51)
-                                        .addComponent(jLabel16)
-                                        .addGap(29, 29, 29))))
-                            .addComponent(jLabel1)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(375, 375, 375)
-                        .addComponent(btnIniciar, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(64, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(39, 39, 39)
-                .addComponent(jLabel1)
-                .addGap(36, 36, 36)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel15))
-                .addGap(28, 28, 28)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel19)
-                        .addComponent(jLabel18)
-                        .addComponent(jLabel17)
-                        .addComponent(jLabel16))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel3)
-                        .addComponent(jLabel5)
-                        .addComponent(jLabel7)
-                        .addComponent(jLabel6)
-                        .addComponent(jLabel12)
-                        .addComponent(jLabel13)
-                        .addComponent(jLabel14)))
-                .addGap(9, 9, 9)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel8)
-                    .addComponent(matUse1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(matUse2, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(matUse4, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(matUse3, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(matAcc1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(matAcc2, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(matAcc3, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(matAA1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(matAA4, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(matAA3, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(matAA2, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel23))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel9)
-                    .addComponent(matUse5, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(matUse8, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(matUse6, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(matUse7, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(matAcc4, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(matAcc5, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(matAcc6, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(matAA5, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(matAA6, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(matAA7, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(matAA8, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel22))
-                .addGap(19, 19, 19)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel10)
-                    .addComponent(matUse9, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(matUse11, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(matUse10, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(matUse12, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(matAcc7, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(matAcc8, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(matAcc9, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(matAA9, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(matAA10, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(matAA11, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(matAA12, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel21))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel11)
-                    .addComponent(matUse13, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(matUse14, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(matUse15, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(matUse16, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(matAcc10, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(matAcc11, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(matAcc12, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(matAA13, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(matAA14, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(matAA15, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(matAA16, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel20))
-                .addGap(48, 48, 48)
-                .addComponent(btnIniciar, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(51, Short.MAX_VALUE))
-        );
+        matCA1.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        matCA1.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        matCA1.setEnabled(false);
+        getContentPane().add(matCA1, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 470, 60, 28));
+
+        matCA2.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        matCA2.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        matCA2.setEnabled(false);
+        getContentPane().add(matCA2, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 470, 60, 28));
+
+        matCA3.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        matCA3.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        matCA3.setEnabled(false);
+        getContentPane().add(matCA3, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 470, 60, 28));
+
+        matCA4.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        matCA4.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        matCA4.setEnabled(false);
+        getContentPane().add(matCA4, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 470, 60, 28));
+
+        matCA5.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        matCA5.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        matCA5.setEnabled(false);
+        getContentPane().add(matCA5, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 510, 60, 28));
+
+        matCA6.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        matCA6.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        matCA6.setEnabled(false);
+        getContentPane().add(matCA6, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 510, 60, 28));
+
+        matCA7.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        matCA7.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        matCA7.setEnabled(false);
+        getContentPane().add(matCA7, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 510, 60, 28));
+
+        matCA8.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        matCA8.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        matCA8.setEnabled(false);
+        getContentPane().add(matCA8, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 510, 60, 28));
+
+        matCA9.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        matCA9.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        matCA9.setEnabled(false);
+        getContentPane().add(matCA9, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 550, 60, 28));
+
+        matCA10.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        matCA10.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        matCA10.setEnabled(false);
+        getContentPane().add(matCA10, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 550, 60, 28));
+
+        matCA11.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        matCA11.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        matCA11.setEnabled(false);
+        getContentPane().add(matCA11, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 550, 60, 28));
+
+        matCA12.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        matCA12.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        matCA12.setEnabled(false);
+        getContentPane().add(matCA12, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 550, 60, 28));
+
+        matCA13.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        matCA13.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        matCA13.setEnabled(false);
+        getContentPane().add(matCA13, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 590, 60, 28));
+
+        matCA14.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        matCA14.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        matCA14.setEnabled(false);
+        getContentPane().add(matCA14, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 590, 60, 28));
+
+        matCA15.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        matCA15.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        matCA15.setEnabled(false);
+        getContentPane().add(matCA15, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 590, 60, 28));
+
+        matCA16.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        matCA16.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        matCA16.setEnabled(false);
+        getContentPane().add(matCA16, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 590, 60, 28));
+
+        nomAOrd1.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        nomAOrd1.setForeground(java.awt.Color.white);
+        nomAOrd1.setText("Ax");
+        getContentPane().add(nomAOrd1, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 460, -1, -1));
+        nomAOrd1.getAccessibleContext().setAccessibleName("A");
+
+        nomAOrd2.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        nomAOrd2.setForeground(java.awt.Color.white);
+        nomAOrd2.setText("Ax");
+        getContentPane().add(nomAOrd2, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 510, -1, -1));
+
+        nomAOrd3.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        nomAOrd3.setForeground(java.awt.Color.white);
+        nomAOrd3.setText("Ax");
+        getContentPane().add(nomAOrd3, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 550, -1, -1));
+
+        nomAOrd4.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        nomAOrd4.setForeground(java.awt.Color.white);
+        nomAOrd4.setText("Ax");
+        getContentPane().add(nomAOrd4, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 600, -1, -1));
+
+        nomAOrd5.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        nomAOrd5.setForeground(new java.awt.Color(255, 255, 255));
+        nomAOrd5.setText("Ax");
+        getContentPane().add(nomAOrd5, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 450, 20, -1));
+
+        nomAOrd6.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        nomAOrd6.setForeground(new java.awt.Color(255, 255, 255));
+        nomAOrd6.setText("Ax");
+        getContentPane().add(nomAOrd6, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 450, 20, -1));
+
+        nomAOrd7.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        nomAOrd7.setForeground(new java.awt.Color(255, 255, 255));
+        nomAOrd7.setText("Ax");
+        getContentPane().add(nomAOrd7, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 450, 20, -1));
+
+        nomAOrd8.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        nomAOrd8.setForeground(new java.awt.Color(255, 255, 255));
+        nomAOrd8.setText("Ax");
+        getContentPane().add(nomAOrd8, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 450, 20, -1));
+
+        jLabel24.setFont(new java.awt.Font("Verdana", 1, 13)); // NOI18N
+        jLabel24.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel24.setText("Matriz CA");
+        getContentPane().add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 410, -1, -1));
+
+        imgP1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fragmentacion_vertical/punto.png"))); // NOI18N
+        getContentPane().add(imgP1, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 490, 30, 20));
+
+        imgP2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fragmentacion_vertical/punto.png"))); // NOI18N
+        getContentPane().add(imgP2, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 530, -1, -1));
+
+        imgP3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fragmentacion_vertical/punto.png"))); // NOI18N
+        getContentPane().add(imgP3, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 570, 30, 30));
+        getContentPane().add(fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        jLabel25.setFont(new java.awt.Font("Verdana", 0, 12)); // NOI18N
+        jLabel25.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/fragmentacion_vertical/back.jpg"))); // NOI18N
+        jLabel25.setText(".");
+        getContentPane().add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -614,13 +633,16 @@ public class Inicio extends javax.swing.JFrame {
         if(errors==0){
             //this.proc.setMatAcc(this.matAcc);
             //this.proc.setMatUse(matUse);
-            this.proc.cargarDatosPrueba();
+            //this.proc.cargarDatosPrueba();
+            this.proc.realizarProceso();
             mostrarMatAA();
+            mostrarMatCA();
+            mostrarPuntoCorte();
         }
 
     }//GEN-LAST:event_btnIniciarActionPerformed
     public void mostrarMatAA(){
-        this.proc.calcularAA();
+        
         matAA1.setText( ""+ this.proc.matAA[0][0]);
         matAA2.setText( ""+ this.proc.matAA[0][1]);
         matAA3.setText( ""+ this.proc.matAA[0][2]);
@@ -640,6 +662,47 @@ public class Inicio extends javax.swing.JFrame {
         matAA14.setText( ""+ this.proc.matAA[3][1]);
         matAA15.setText( ""+ this.proc.matAA[3][2]);
         matAA16.setText( ""+ this.proc.matAA[3][3]);         
+    }
+    public void mostrarMatCA(){        
+        this.proc.ordenarNombres();
+        matCA1.setText( ""+ this.proc.matCA[0][0]);
+        matCA2.setText( ""+ this.proc.matCA[0][1]);
+        matCA3.setText( ""+ this.proc.matCA[0][2]);
+        matCA4.setText( ""+ this.proc.matCA[0][3]);
+        
+        matCA5.setText( ""+ this.proc.matCA[1][0]);
+        matCA6.setText( ""+ this.proc.matCA[1][1]);
+        matCA7.setText( ""+ this.proc.matCA[1][2]);
+        matCA8.setText( ""+ this.proc.matCA[1][3]);
+        
+        matCA9.setText( ""+ this.proc.matCA[2][0]);
+        matCA10.setText( ""+ this.proc.matCA[2][1]);
+        matCA11.setText( ""+ this.proc.matCA[2][2]);
+        matCA12.setText( ""+ this.proc.matCA[2][3]);    
+        
+        matCA13.setText( ""+ this.proc.matCA[3][0]);
+        matCA14.setText( ""+ this.proc.matCA[3][1]);
+        matCA15.setText( ""+ this.proc.matCA[3][2]);
+        matCA16.setText( ""+ this.proc.matCA[3][3]);   
+        
+        nomAOrd1.setText(this.proc.nombresAtriOr[3]);
+        nomAOrd2.setText(this.proc.nombresAtriOr[0]);
+        nomAOrd3.setText(this.proc.nombresAtriOr[1]);
+        nomAOrd4.setText(this.proc.nombresAtriOr[2]);    
+        
+        nomAOrd5.setText(this.proc.nombresAtriOr[3]);
+        nomAOrd6.setText(this.proc.nombresAtriOr[0]);
+        nomAOrd7.setText(this.proc.nombresAtriOr[1]);
+        nomAOrd8.setText(this.proc.nombresAtriOr[2]);          
+    }    
+    public void mostrarPuntoCorte(){
+        if(this.proc.puntoDiv==1){
+            imgP1.setVisible(true);
+        }else if(this.proc.puntoDiv==2){
+            imgP2.setVisible(true);
+        }else{
+            imgP3.setVisible(true);
+        }            
     }
     /**
      * @param args the command line arguments
@@ -678,6 +741,10 @@ public class Inicio extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnIniciar;
+    private javax.swing.JLabel fondo;
+    private javax.swing.JLabel imgP1;
+    private javax.swing.JLabel imgP2;
+    private javax.swing.JLabel imgP3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -694,6 +761,8 @@ public class Inicio extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -729,6 +798,22 @@ public class Inicio extends javax.swing.JFrame {
     private javax.swing.JTextField matAcc7;
     private javax.swing.JTextField matAcc8;
     private javax.swing.JTextField matAcc9;
+    private javax.swing.JTextField matCA1;
+    private javax.swing.JTextField matCA10;
+    private javax.swing.JTextField matCA11;
+    private javax.swing.JTextField matCA12;
+    private javax.swing.JTextField matCA13;
+    private javax.swing.JTextField matCA14;
+    private javax.swing.JTextField matCA15;
+    private javax.swing.JTextField matCA16;
+    private javax.swing.JTextField matCA2;
+    private javax.swing.JTextField matCA3;
+    private javax.swing.JTextField matCA4;
+    private javax.swing.JTextField matCA5;
+    private javax.swing.JTextField matCA6;
+    private javax.swing.JTextField matCA7;
+    private javax.swing.JTextField matCA8;
+    private javax.swing.JTextField matCA9;
     private javax.swing.JTextField matUse1;
     private javax.swing.JTextField matUse10;
     private javax.swing.JTextField matUse11;
@@ -745,8 +830,19 @@ public class Inicio extends javax.swing.JFrame {
     private javax.swing.JTextField matUse7;
     private javax.swing.JTextField matUse8;
     private javax.swing.JTextField matUse9;
+    private javax.swing.JLabel nomAOrd1;
+    private javax.swing.JLabel nomAOrd2;
+    private javax.swing.JLabel nomAOrd3;
+    private javax.swing.JLabel nomAOrd4;
+    private javax.swing.JLabel nomAOrd5;
+    private javax.swing.JLabel nomAOrd6;
+    private javax.swing.JLabel nomAOrd7;
+    private javax.swing.JLabel nomAOrd8;
     // End of variables declaration//GEN-END:variables
 public void agregarValidaciones(){
+    imgP1.setVisible(false);
+    imgP2.setVisible(false);
+    imgP3.setVisible(false);
     matUse1.addKeyListener(new KeyAdapter() {
         public void keyTyped(KeyEvent e) {
         validarUnoCero(e);

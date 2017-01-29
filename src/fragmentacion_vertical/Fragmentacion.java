@@ -14,19 +14,50 @@ public class Fragmentacion {
         int [] ordenAtri = new int[4];
         String [] atriClave = new String[4];
         String [] nombresAtri = new String[4];
-        
+        String [] nombresAtriOr = new String[4];
+        static int puntoDiv;
     public void realizarProceso() {
 
         nombresAtri[0]="A1";
         nombresAtri[1]="A2";
         nombresAtri[2]="A3";
         nombresAtri[3]="A4";
-        //Llenar matriz de uso de atributo
-        //System.out.println("\n\nProporciona valores para la matriz de uso de atributo");
-        //LlenarMatriz(matUse,numQue,numAt,"Atributo",entrada);
-        //Llenar matriz de frecuencia de acceso
-        //System.out.println("\n\nProporciona valores para la matriz de frecuencia de acceso");
-        //LlenarMatriz(matAcc,numAt,numSit,"Sitio",entrada);
+        
+                matUse[0][0] = 1;
+        matUse[0][1] = 0;
+        matUse[0][2] = 1;
+        matUse[0][3] = 0;
+        
+        matUse[1][0] = 0;
+        matUse[1][1] = 1;
+        matUse[1][2] = 1;
+        matUse[1][3] = 0;   
+        
+        matUse[2][0] = 0;
+        matUse[2][1] = 1;
+        matUse[2][2] = 0;
+        matUse[2][3] = 1;
+
+        matUse[3][0] = 0;
+        matUse[3][1] = 0;
+        matUse[3][2] = 1;
+        matUse[3][3] = 1;  
+        
+        matAcc[0][0] = 15;
+        matAcc[0][1] = 20;
+        matAcc[0][2] = 10;
+        
+        matAcc[1][0] = 5;
+        matAcc[1][1] = 0;
+        matAcc[1][2] = 0;
+
+        matAcc[2][0] = 25;
+        matAcc[2][1] = 25;
+        matAcc[2][2] = 25;
+
+        matAcc[3][0] = 3;
+        matAcc[3][1] = 0;
+        matAcc[3][2] = 0;   
         CalcularMatAffAtri(matAA,matUse,matAcc,numQue,numAt,numSit);
         CalcularMatAff_CA(matCA,matAA,ordenAtri,numAt);
         CalcularParticiones(matCA,matUse,matAcc,ordenAtri,nombresAtri,
@@ -124,7 +155,7 @@ public class Fragmentacion {
             }
         }
         System.out.println("Matriz de Afinidad Closterizada ordenada");
-        ImprimirMatriz(matCA,numAt,numAt);
+        ImprimirMatriz(matCA,numAt,numAt);        
         //Continuar();
     }
 
@@ -217,7 +248,7 @@ public class Fragmentacion {
             SHIFT(nuevoOrdenCol,numAt);
             
         }while(auxiliar!= nuevoOrdenCol[numAt-1]);
-        
+        puntoDiv=puntoDivision;
         //Fragmentos de TQ
         System.out.println("\n\nFRAGMENTOS 1");
         boolean esClave = false;
@@ -351,16 +382,11 @@ public class Fragmentacion {
             nuevoOrdenCol[columna] = nuevoOrdenCol[columna+1];
         }
         nuevoOrdenCol[numAt-1]=aux;
-    }
-
-    private static void Continuar() {
-        int c;
-        Scanner entrada = new Scanner(System.in);
-        System.out.print("Presiona 1 para continuar: ");
-        do{
-            c = entrada.nextInt();
-        }while(c!=1);
-    }
+    } 
     
-    
+    public void ordenarNombres(){
+        for(int i=0;i<numAt;i++){
+            nombresAtriOr[i]=nombresAtri[ordenAtri[i]];
+        }
+    }
 }
